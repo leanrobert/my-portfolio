@@ -5,6 +5,8 @@ import Hero from './components/sections/Hero'
 import Navbar from './components/Navbar'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
+import Projects from './components/sections/Projects'
+import Contact from './components/sections/Contact'
 
 const App = () => {
   return (
@@ -12,9 +14,21 @@ const App = () => {
       <div className='relative grid items-center w-full md:justify-center'>
         <Image src={bg} alt='Login image' />
         <Navbar />
-        <Hero id='main' />
-        <About id='about' />
-        <Skills id='skills' />
+        <section id='main'>
+          <Hero />
+        </section>
+        <section id='about'>
+          <About />
+        </section>
+        <section id='skills'>
+          <Skills />
+        </section>
+        <section id='projects'>
+          <Projects />
+        </section>
+        <section id='contact'>
+          <Contact />
+        </section>
       </div>
     </div>
   )

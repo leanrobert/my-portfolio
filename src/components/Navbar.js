@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import React, { useState } from 'react'
 
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <header className='fixed w-full bg-black top-0 left-0 z-10 px-6'>
       <nav className='flex justify-between items-center h-16'>
-        <a href='/' className='text-base font-bold text-white'>Leandro <span className='text-orange-300'>Robert</span></a>
+        <Link to='main' smooth={true} duration={500} className='text-base font-bold text-white'>Leandro <span className='text-orange-300'>Robert</span></Link>
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -21,19 +22,19 @@ const Navbar = () => {
             >
               <ul className='flex flex-col gap-y-12'>
                 <li className='text-white-300 font-semibold transition duration-300 hover:text-orange-300'>
-                  <a href='#main' onClick={() => setIsOpen(false)}>Home</a>
+                  <Link to='main' smooth={true} duration={500} onClick={() => setIsOpen(false)}>Home</Link>
                 </li>
                 <li className='text-white-300 font-semibold transition duration-300 hover:text-orange-300'>
-                  <a href='#about' onClick={() => setIsOpen(false)}>About</a>
+                  <Link to='about' smooth={true} duration={500} onClick={() => setIsOpen(false)}>About</Link>
                 </li>
                 <li className='text-white-300 font-semibold transition duration-300 hover:text-orange-300'>
-                  <a href='#skills' onClick={() => setIsOpen(false)}>Skills</a>
+                  <Link to='skills' smooth={true} duration={500} onClick={() => setIsOpen(false)}>Skills</Link>
                 </li>
                 <li className='text-white-300 font-semibold transition duration-300 hover:text-orange-300'>
-                  <a href='#projects' onClick={() => setIsOpen(false)}>Projects</a>
+                  <Link to='projects' smooth={true} duration={500} onClick={() => setIsOpen(false)}>Projects</Link>
                 </li>
                 <li className='text-white-300 font-semibold transition duration-300 hover:text-orange-300'>
-                  <a href='#contact' onClick={() => setIsOpen(false)}>Contact</a>
+                  <Link to='contact' smooth={true} duration={500} onClick={() => setIsOpen(false)}>Contact</Link>
                 </li>
               </ul>
 

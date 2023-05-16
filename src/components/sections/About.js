@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../Layout'
 import me from '../../assets/yo.jpg'
 import Buttons from '../Buttons'
+import { Link } from 'react-scroll'
 
 const About = () => {
   return (
@@ -27,7 +28,9 @@ const About = () => {
           </p>
 
           <Buttons className='py-2 mt-4'>
-            Let's collaborate!
+            <Link to='contact' smooth={true} duration={500}>
+              Let's collaborate!
+            </Link>
           </Buttons>
         </div>
       </div>
