@@ -28,7 +28,7 @@ const About = () => {
           </p>
 
           <Buttons className='py-2 mt-4'>
-            <Link to='contact' smooth={true} duration={500}>
+            <Link to='contact' href='/contact' smooth={true} duration={500}>
               Let's collaborate!
             </Link>
           </Buttons>

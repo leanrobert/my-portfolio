@@ -10,7 +10,7 @@ const Projects = () => {
     <Layout className='md:py-20'>
       <h2 className='text-2xl text-center font-bold md:text-3xl'>Some Projects</h2>
 
-      <div className='flex-wrap justify-center gap-4 md:flex'>
+      <div className='flex-wrap justify-center gap-4 flex'>
         <div className='border-[0.2rem] border-orange-300 rounded-xl py-4 px-6 my-4 flex flex-col items-center gap-4 max-w-[400px]'>
           <h3 className='font-bold text-xl'>Quota Controller</h3>
           <img src={proy1} alt='Quota project' className='rounded-lg' />

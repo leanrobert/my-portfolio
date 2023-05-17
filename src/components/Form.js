@@ -56,7 +56,7 @@ const Form = () => {
           <AiOutlineUser className='text-xl text-orange-300' />
           <div className='relative'>
             <input value={name} name='user_name' onChange={e => setName(e.target.value)} type='text' required placeholder=' ' className='text-base font-poppins border-none outline-none w-full py-3 bg-transparent text-white relative z-1 peer' />
-            <label className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-6 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Name</label>
+            <label htmlFor='user_name' className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-6 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Name</label>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ const Form = () => {
           <AiOutlineMail className='text-xl text-orange-300' />
           <div className='relative'>
             <input value={email} name='user_email' onChange={e => setEmail(e.target.value)} type='email' required placeholder=' ' className='text-base font-poppins border-none outline-none w-full py-3 bg-transparent text-white relative z-1 peer' />
-            <label className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-6 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Email</label>
+            <label htmlFor='user_email' className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-6 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Email</label>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ const Form = () => {
           <AiOutlineMessage className='text-xl relative -top-4 text-orange-300' />
           <div className='relative'>
             <textarea name='message' rows={1} value={message} onChange={e => setMessage(e.target.value)} required placeholder=' ' className='text-base font-poppins border-none outline-none w-full py-3 bg-transparent text-white relative z-1 peer'></textarea>
-            <label className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-8 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Message</label>
+            <label htmlFor='message' className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-8 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Message</label>
           </div>
         </div>
       </div>
