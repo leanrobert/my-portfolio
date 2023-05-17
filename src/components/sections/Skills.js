@@ -10,12 +10,12 @@ import { MdMonitor, MdSecurity } from  'react-icons/md'
 const Skills = () => {
   return (
     <Layout>
-      <h2 className='text-2xl text-center font-bold'>Skills</h2>
+      <h2 className='text-2xl text-center font-bold md:text-3xl'>Skills</h2>
 
-      <div className='py-4'>
-        <div className='border-[0.2rem] border-orange-300 rounded-xl py-4 px-6 my-4'>
-          <h3 className='text-center underline text-lg'>Backend Development</h3>
-          <ul>
+      <div className='py-4 gap-6 flex-wrap justify-center md:flex'>
+        <div className='border-[0.2rem] border-orange-300 rounded-xl py-4 px-6 my-4 min-w-[330px]'>
+          <h3 className='text-center underline text-lg md:text-2xl'>Backend Development</h3>
+          <ul className='mt-4'>
             <li>
               <div className='flex justify-between items-center'>
                 <span className='text-base'>Python</span>
@@ -88,9 +88,9 @@ const Skills = () => {
            </ul>
         </div>
 
-        <div className='border-[0.2rem] border-orange-300 rounded-xl py-4 px-6 my-4'>
-          <h3 className='text-center underline text-lg'>Frontend Development</h3>
-          <ul>
+        <div className='border-[0.2rem] border-orange-300 rounded-xl py-4 px-6 my-4 min-w-[330px]'>
+          <h3 className='text-center underline text-lg md:text-2xl'>Frontend Development</h3>
+          <ul className='mt-4'>
             <li>
               <div className='flex justify-between items-center'>
                 <span className='text-base'>HTML</span>
@@ -143,9 +143,9 @@ const Skills = () => {
            </ul>
         </div>
 
-        <div className='border-[0.2rem] border-orange-300 rounded-xl py-4 px-6 my-4'>
-          <h3 className='text-center underline text-lg'>Sysadmin Skills</h3>
-          <ul>
+        <div className='border-[0.2rem] border-orange-300 rounded-xl py-4 px-6 my-4 min-w-[330px]'>
+          <h3 className='text-center underline text-lg md:text-2xl'>Sysadmin Skills</h3>
+          <ul className='mt-4'>
             <li>
               <div className='flex justify-between items-center'>
                 <span className='text-base'>Linux</span>

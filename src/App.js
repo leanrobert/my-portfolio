@@ -10,23 +10,23 @@ import Contact from './components/sections/Contact'
 
 const App = () => {
   return (
-    <div className='p-0 m-0 text-base text-white font-poppins'>
-      <div className='relative grid items-center w-full md:justify-center'>
+    <div className='p-0 m-0 text-base text-white font-poppins w-full min-w-full'>
+      <div className='relative grid items-center w-full'>
         <Image src={bg} alt='Login image' />
         <Navbar />
-        <section id='main'>
+        <section id='main' className='px-4' >
           <Hero />
         </section>
-        <section id='about'>
+        <section id='about' className='px-4'>
           <About />
         </section>
-        <section id='skills'>
+        <section id='skills' className='px-4'>
           <Skills />
         </section>
-        <section id='projects'>
+        <section id='projects' className='px-4'>
           <Projects />
         </section>
-        <section id='contact'>
+        <section id='contact' className='px-4'>
           <Contact />
         </section>
       </div>

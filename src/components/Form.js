@@ -48,7 +48,7 @@ const Form = () => {
   }
 
   return (
-    <form ref={form} onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={handleSubmit} className='max-w-[600px] mx-auto'>
       <h1 className='text-center text-2xl font-bold mb-8 sm:text-4xl'>Contact Me</h1>
 
       <div className='grid gap-y-6 mb-6'>
@@ -71,21 +71,21 @@ const Form = () => {
         <div className='grid grid-cols-[max-content_1fr] items-center gap-x-3 border-b-[2px] border-white'>
           <AiOutlineMessage className='text-xl relative -top-4 text-orange-300' />
           <div className='relative'>
-            <textarea name='message' value={message} onChange={e => setMessage(e.target.value)} required placeholder=' ' className='text-base font-poppins border-none outline-none w-full py-3 bg-transparent text-white relative z-1 peer'></textarea>
-            <label className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-6 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Message</label>
+            <textarea name='message' rows={1} value={message} onChange={e => setMessage(e.target.value)} required placeholder=' ' className='text-base font-poppins border-none outline-none w-full py-3 bg-transparent text-white relative z-1 peer'></textarea>
+            <label className='text-orange-300 absolute left-0 top-[13px] font-medium duration-300 transform -translate-y-8 scale-75 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>Message</label>
           </div>
         </div>
       </div>
-      <div>
+      <div className='flex flex-col items-center justify-center'>
         <ReCAPTCHA
           ref={captcha}
           sitekey='6LfLexAmAAAAAEj0f3Hl46wHaaTB5nR4kZK1i2jA'
           onChange={onChange}
         />
-        {validCapcha === false && <p className='bg-red-400 text-center my-2 rounded-lg'>Captch is mandatory</p>}
+        {validCapcha && <p className='w-full bg-red-400 text-center my-2 rounded-lg max-w-[600px]'>Captch is mandatory</p>}
       </div>
-      <div className='flex flex-col justify-center mt-2'>
-        {messageSend && <p className='bg-green-700 text-center mb-2 rounded-lg'>{messageSend}</p>}
+      <div className='flex flex-col items-center justify-center my-2'>
+        {messageSend && <p className='bg-green-700 text-center mb-4 rounded-lg w-full max-w-[600px]'>{messageSend}</p>}
         <Buttons type='submit' className='py-4'>Submit</Buttons>
       </div>
     </form>

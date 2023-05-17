@@ -9,17 +9,19 @@ const Hero = () => {
 
   return (
     <Layout>
-      <div className='py-6'>
-        <h1 className='text-4xl font-bold text-center'>Hi, I'm <span className='block'>Leandro Robert</span></h1>
+      <div className='py-6 md:py-20'>
+        <h1 className='text-4xl font-bold text-center md:text-5xl'>Hi, I'm <span className='block md:inline'>Leandro Robert</span></h1>
         <div className='relative mt-8'>
           <TypeAnimation
             sequence={[ 'Software Developer', 2000, 'Sysadmin', 2000 ]}
             wrapper='h3'
             repeat={Infinity}
-            className='text-2xl font-bold text-transparent text-stroke text-center'
+            className='text-2xl font-bold text-transparent text-stroke text-center md:text-3xl'
           />
         </div>
-        <p className='text-md mt-8 mx-0 mb-8'>Experienced full stack developer dedicated to crafting exceptional web solutions that seamlessly blend functionality and aesthetics.</p>
+        <p className='text-md mt-8 mx-0 mb-8 max-w-[600px] sm:text-center md:text-lg md:mx-auto'>
+          Experienced full stack developer dedicated to crafting exceptional web solutions that seamlessly blend functionality and aesthetics.
+        </p>
         <div className='relative flex justify-center h-20 gap-6'>
           <Buttons>
             <a href='/CV-Leandro-Robert-EN.pdf' download='LRobert-EN.pdf'>Resume</a>
